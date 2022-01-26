@@ -11299,7 +11299,7 @@ p {
 }
 
 .text-faded {
-  color: #f6e1c5;
+  color: rgba(255,255,255,.3);
 }
 
 .site-heading {
