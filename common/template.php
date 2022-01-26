@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><?php include('common/head.php')?></head>
+    <head>
+        <?php include('common/head.php')?></head>
     <body>
         <?php 
-                include('common/header.php');
-                
+            include('common/header.php');         
         //afficher le content selon navigation
         $loc = filter_input(INPUT_GET,'loc');
         // par défault c'est sur page home
@@ -22,7 +22,7 @@
             case 'products':
                 include('content/product_content.php');
             break;
-            case 'store':
+            case 'realisations':
                 include('content/store_content.php');
             break;
             default:
