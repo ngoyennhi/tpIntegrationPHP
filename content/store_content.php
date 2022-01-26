@@ -1,3 +1,68 @@
+<?php
+//mettre cet morceau de code pour savoir l'erreur si l'on a
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+// Tous les fichiers passent par le même fichier index.php. On l’appelle le contrôleur
+//initialisation d'une variable
+$arr = [
+    'Ho Tong Minh' => [
+        'prenom' => 'Yen Nhi',
+        'site' =>
+            'https://hotongminh.needemand.com/monportfolio/indexAccueil.html',
+    ],
+    'Razafia' => [
+        'prenom' => 'Stéphane',
+        'site' =>
+            'https://razafiasimanana.needemand.com/',
+    ],
+    'Baudino' => [
+        'prenom' => 'Pierre-Olivier',
+        'site' =>
+            'https://pierre-olivierb.github.io',
+    ],
+    'Kim' => [
+        'prenom' => 'Young Hee',
+        'site' =>
+            'https://kim.needemand.com/',
+    ],
+    'Cochonneau' => [
+        'prenom' => 'Laurent',
+        'site' =>
+            'https://cochonneau.needemand.com/',
+    ],
+    'Hernandez' => [
+        'prenom' => 'Raul',
+        'site' =>
+            'https://hernandez.needemand.com/',
+    ],
+    'Arneaud' => [
+        'prenom' => 'Patrick',
+        'site' =>
+            'https://arnaud.needemand.com/',
+    ],
+    'Briois' => [
+        'prenom' => 'Jean-Bernard',
+        'site' =>
+            'https://briois.needemand.com/',
+    ],
+    'Mourichon' => [
+        'prenom' => 'Thibault',
+        'site' =>
+            'https://mourichon.needemand.com/',
+    ],
+    'Linxe' => [
+        'prenom' => 'Sylvie',
+        'site' =>
+            'https://linxe.needemand.com/',
+    ],
+    'Grossi' => [
+        'prenom' => 'Julien',
+        'site' =>
+            'https://grossi.needemand.com/',
+    ],
+];
+?>
+
 <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -7,35 +72,11 @@
                                 <span class="section-heading-upper">Coming Soon</span>
                                 <span class="section-heading-lower">Vos réalisations</span>
                             </h2>
+                            <!-- un boucle pour ajouter les infos dans le tableau $arr dans la liste -->
                             <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Sunday
-                                    <span class="ms-auto">Closed</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Monday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Tuesday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Wednesday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Thursday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Friday
-                                    <span class="ms-auto">7:00 AM to 8:00 PM</span>
-                                </li>
-                                <li class="list-unstyled-item list-hours-item d-flex">
-                                    Saturday
-                                    <span class="ms-auto">9:00 AM to 5:00 PM</span>
-                                </li>
+                                <?php foreach($arr as $key => $value)
+                                echo "<li class='list-unstyled-item list-hours-item d-flex justify-content-between'>".$key." ".$value['prenom']."<a class='ml-auto' href = ' ".$value['site']." ' >"."Porfolio</a></li>";
+                                ?>
                             </ul>
                             <p class="address mb-5">
                                 <em>
