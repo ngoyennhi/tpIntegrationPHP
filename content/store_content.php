@@ -108,7 +108,7 @@ $arr = [
                                 </h2>
                                 
                                 <p class="mb-0">
-                                    Projet réalisé dans le cadre d'une formation. En partie en groupe et en partie individuellement, ce projet est le résultat d'un apprentissage lors d'une formation. 
+                                    Projet réalisé dans le cadre d'une formation. En partie en groupe et en partie individuellement, ce projet est le résultat d'un apprentissage lors d'une formation. <br>
                                     Temps de réalisation du projet<em> 5 mois</em> environ
                                 </p>
                             </div>
