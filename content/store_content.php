@@ -75,7 +75,7 @@ $arr = [
                             <!-- un boucle pour ajouter les infos dans le tableau $arr dans la liste -->
                             <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                                 <?php foreach($arr as $key => $value)
-                                echo "<li class='list-unstyled-item list-hours-item n_fontLora d-flex justify-content-between'>".$key." ".$value['prenom']."<a class='ml-auto' href = ' ".$value['site']." ' >"."Porfolio</a></li>";
+                                echo "<li class='list-unstyled-item list-hours-item n_fontLora d-flex justify-content-between'>".$key." ".$value['prenom']."<a class='ml-auto n_link' href = ' ".$value['site']." ' >"."Porfolio</a></li>";
                                 ?>
                             </ul>
                             <p class="address mb-5">
