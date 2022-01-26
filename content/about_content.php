@@ -8,7 +8,7 @@
                             <div class="bg-faded rounded p-5">
                                 <h2 class="section-heading mb-4">
                                     <span class="section-heading-upper">ENTREPRISE FICTIVE À BUT PÉDAGOGIQUE</span>
-                                    <span class="section-heading-lower">ABOUT NESTI</span>
+                                    <span class="section-heading-lower ">ABOUT NESTI</span>
                                 </h2>
                                 <p>Fondé en 1984 par les Frères Hernandez, notre établissement a fourni un excelent chocolat venant des quatres coins du monde. C'est en 1945, que Marina Hernadez, decide de diversifier l'entreprise familiale, sans perdre en prestige. <br>
                                 Nesti devint alors une référence dans le monde de la <em>patisserie</em> <br>
