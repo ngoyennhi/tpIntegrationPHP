@@ -78,14 +78,14 @@ $arr = [
                                 echo "<li class='list-unstyled-item list-hours-item n_fontLora d-flex justify-content-between'>".$key." ".$value['prenom']."<a class='ml-auto n_link' href = ' ".$value['site']." ' >"."Porfolio</a></li>";
                                 ?>
                             </ul>
-                            <p class="address mb-5">
+                            <p class="address mb-5 n_fontLora">
                                 <em>
                                     <strong>Promo 2020-2021 </strong>
                                     <br />
                                     Concepteurs & développeurs d'application 
                                 </em>
                             </p>
-                            <p class="mb-0">
+                            <p class="mb-0 n_fontLora ">
                                 <small><em>Needemand</em></small>
                                 <br />
                                 contact@needemand.com 
