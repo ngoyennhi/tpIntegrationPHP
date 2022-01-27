@@ -8,7 +8,7 @@
                             <span class="section-heading-lower">PATISSERIE</span>
                         </h2>
                         <p class="mb-3">Le plaisir de partager</p>
-                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl text-light " href="#!">Actualités</a></div>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl text-light n_fontLora" href="#!">Actualités</a></div>
                     </div>
                 </div>
             </div>
