@@ -5,16 +5,13 @@ $username = "root";
 $password = "root";
 //nom de la base de donnees
 $dbname = "commentaire";  
-// include les infos saisies a partir de la page commentaires
-$nom = $arrCom['nom'];
-$com = $arrCom['commentaire'];
 
 try {
   //On se connecte a la BDD
     $conn = new PDO("mysql:host=".$servername.";dbname=".$dbname, $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
+  //echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
   //Le script s'arrete (die) et un message d'erreur apparait.

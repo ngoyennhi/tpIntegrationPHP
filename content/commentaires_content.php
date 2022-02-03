@@ -1,3 +1,12 @@
+      <?php 
+      // connexion BDD 
+      include('control/connexion.php');
+      $sql="SELECT pseudo, comment FROM comments";
+      $sth = $conn->prepare($sql);
+       //resultat est un tableau ( array )
+      $sth->execute();
+      $c = $sth->fetchAll();
+      ?>
       <section class="page-section cta">
             <div class="container">
                 <div class="row">
@@ -27,6 +36,12 @@
                                      "Ce qu'un homme ne dit pas est le sel de la conversation." 
                                 </h2>
                                 <p style="margin-left: 43vw;">Proverbe japonais</p>
+                                <?php foreach ($c as $key => $value) {
+                                    echo 'nom:'.$value["pseudo"].'<br>';
+                                    echo 'commentaire:'.$value["comment"].'<br>';
+                                    echo '-------------------------<br>';
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

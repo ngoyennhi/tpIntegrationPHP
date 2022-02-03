@@ -11,8 +11,11 @@
         
         <?php
             $arrCom = filter_input(INPUT_POST,'saisie',FILTER_DEFAULT,FILTER_REQUIRE_ARRAY);
-            echo 'Nom : '.$arrCom['nom'].'<br>';
-            echo 'Commentaire : ' .$arrCom['commentaire'].'<br>';
+            // include les infos saisies a partir de la page commentaires
+            $nom = $arrCom['nom'];
+            $com = $arrCom['commentaire'];
+            echo 'Nom : '.$nom.'<br>';
+            echo 'Commentaire : ' .$com .'<br>';
 
             //connexion la BDD
             include('connexion.php');
