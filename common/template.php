@@ -23,6 +23,8 @@
             break;
             case 'realisations':
                 include('content/store_content.php');
+            case 'commentaires':
+                include('content/commentaires_content.php');
             break;
             default:
             include('content/404.php');
